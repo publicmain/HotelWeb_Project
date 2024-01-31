@@ -27,5 +27,13 @@ SVN: Version control for efficient collaboration and code management.
 Knowledge Points:
 This project encapsulates a range of technical concepts, including Spring and Spring Cloud for framework management, Eureka for service discovery, Redis for caching, Mybatis and MySQL for database interactions, RabbitMQ for message queuing, Nginx for web serving, Shiro for security, and SVN for version control.
 
+Module Analysis
+User Module: Handles user registration, login, and information management.
+Membership Module: Provides membership services, such as points accumulation and special offers.
+Room Module: Manages different types of rooms, including room reservations and status updates.
+Check-In and Check-Out Module: Deals with customer check-in and check-out processes.
+Reservation Module: Allows users to book rooms, including selecting room types and dates.
+City and Hotel Module: Lists hotel options in various cities, providing detailed information.
+
 Conclusion:
 The Online Hotel Reservation Platform is a testament to modern software engineering principles, effectively combining multiple technologies to deliver a secure, efficient, and user-friendly online booking experience. This Java-based project is a prime example of how technology can be leveraged to streamline and enhance the hospitality industry's customer service.
