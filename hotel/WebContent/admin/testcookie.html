@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="assets/libs/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/libs/jquery/dist/jquery.cookie%20v1.4.1.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script>
+			$(function(){
+				if($.cookie("uname")!="" && $.cookie("uname")!=undefined)
+				{
+					$("#flag").prop("checked",true);
+				}
+				else
+				{
+					$("#flag").prop("checked",false);
+				}
+				getCookie()
+			});
+			function createCookie()
+			{
+				//创建 cookie，并设置 cookie 的有效路径，路径为网站的根目录
+				//$.cookie('name', 'value', { expires: 7, path: '/' });
+
+				$.cookie("uname","admin",{ expires: 7 });
+				$.cookie("upwd","admin",{ expires: 7 });
+			}
+			
+			function getCookie()
+			{
+				if($.cookie("uname")!="")
+				{
+					$("#uname").val($.cookie("uname"));
+					$("#upwd").val($.cookie("upwd"));
+				}
+			}
+		</script>
+	</head>
+	<body>
+		uname:<input type="name" id="uname" /><br>
+		
+		upwd:<input type="name" id="upwd" /><br>
+		
+		<input type="checkbox" id="flag" /><br>
+		
+		<input type="button" value="登录" onclick="createCookie()"/><br>
+	</body>
+</html>
